@@ -1,5 +1,5 @@
 const alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
-const ENCRYPTION = 'encryption';
+const ENCRYPTION = 'encode';
 
 /**
  * Encrypt/decrypt a given text by the Caesar's cypher.

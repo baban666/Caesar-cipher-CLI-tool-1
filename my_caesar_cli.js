@@ -1,9 +1,6 @@
-// Import an encryption/decryption function
-const {cryptoSystem} = require('./src/caesar_cypher.js');
+// Validate the console arguments
+const {getOutputFile, getInputFile, validateArgs} = require('./modules/console_arguments.js');
+validateArgs();
 
-// Obtaining the console arguments
-const argv = require('minimist')(process.argv.slice(2));
-
-console.log(argv);
-
-console.log(cryptoSystem("AbC", 26, 'encryption'));
+const {dataTransformation} = require('./modules/data_transformation.js');
+dataTransformation(getInputFile(), getOutputFile());
