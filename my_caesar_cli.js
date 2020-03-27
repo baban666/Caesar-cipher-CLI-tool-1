@@ -1,6 +1,6 @@
-// Validate the console arguments
-const {getOutputFile, getInputFile, validateArgs} = require('./modules/console_arguments.js');
-validateArgs();
-
+// Import
 const {dataTransformation} = require('./modules/data_transformation.js');
-dataTransformation(getInputFile(), getOutputFile());
+const {getOutputFile, getInputFile, validateArgs} = require('./modules/console_arguments.js');
+
+validateArgs(); // Validate the console arguments
+dataTransformation(getInputFile(), getOutputFile()); // Transform data
